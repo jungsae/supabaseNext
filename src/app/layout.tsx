@@ -7,14 +7,6 @@ export const metadata = {
   description: 'Next.js 14 + Supabase 실시간 댓글 예제',
 }
 
-type Comment = {
-  id: string
-  content: string
-  created_at: string
-  user_id: string
-  profiles?: { email: string }
-}
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
